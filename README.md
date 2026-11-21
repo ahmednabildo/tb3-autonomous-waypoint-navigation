@@ -202,14 +202,14 @@ The desired heading toward the target is:
 
 ```math
 \theta_d =
-\operatorname{atan2}(y_g-y,\ x_g-x)
+\mathrm{atan2}(y_g-y,\ x_g-x)
 ```
 
 The heading error is:
 
 ```math
 e_\theta =
-\operatorname{atan2}
+\mathrm{atan2}
 \left(
 \sin(\theta_d-\theta),
 \cos(\theta_d-\theta)
@@ -311,7 +311,7 @@ The heading error is then calculated relative to the requested final waypoint or
 
 ```math
 e_{\theta,g} =
-\operatorname{atan2}
+\mathrm{atan2}
 \left(
 \sin(\theta_g-\theta),
 \cos(\theta_g-\theta)
@@ -848,7 +848,7 @@ Angular velocity is estimated by differentiating the robot heading.
 \hat{\omega}(t) =
 \frac{d}{dt}
 \left(
-\operatorname{unwrap}(\theta(t))
+\mathrm{unwrap}(\theta(t))
 \right)
 ```
 
